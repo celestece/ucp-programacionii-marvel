@@ -6,7 +6,7 @@ public class Combate{
     private Villano Villano;
     private Personaje Ganador;
     private int CantidadDeUsosSuperpoder;
-
+    
 
     #endregion
     
@@ -14,14 +14,12 @@ public class Combate{
     public Combate(){
         this.Superheroe=new Superheroe();
         this.Villano=new Villano();
-        this.Ganador=new Personaje();
         this.CantidadDeUsosSuperpoder=0;
     }
 
-    public Combate(Superheroe super, Villano vil, Personaje gan, int usos){
+    public Combate(Superheroe super, Villano vil, int usos){
         this.Superheroe=super;
         this.Villano=vil;
-        this.Ganador=gan;
         this.CantidadDeUsosSuperpoder=usos;
     }
     #endregion
